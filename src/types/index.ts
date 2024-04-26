@@ -13,10 +13,15 @@ export type UserDataT = {
   jobDesc: string;
 }
 
+export type ChatState = 'understanding' | 'recognizing' | 'advice';
+
 export type ChatDataT = {
   name: string;
   message: ReactNode;
   isBot?: boolean;
+  state?: ChatState;
+  noPadding?: boolean;
+  order?: number;
 }
 
 export type ChatGrouppedT = {

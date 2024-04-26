@@ -8,7 +8,7 @@ type PropsChatboxT = {
 const Chatbox = (props: PropsChatboxT) => {
   const { data, ...rest } = props;
   return (
-    <Box className={`chat-box ${data.isBot && "bot-message"} ${rest.className}`}>
+    <Box className={`${data.noPadding ? "!p-0":""} chat-box ${data.isBot ? "bot-message": "my-message"} ${rest.className||""}`}>
       {data.message}
     </Box>
   )
