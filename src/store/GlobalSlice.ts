@@ -2,7 +2,9 @@ import { UserDataT } from "@/types";
 import { PayloadAction, createSlice } from "@reduxjs/toolkit";
 
 export interface State {
+  Superior: UserDataT[];
   user?: UserDataT|null;
+  Peer: UserDataT[];
 }
 
 type PayloadDataT<T> = {
@@ -12,6 +14,31 @@ type PayloadDataT<T> = {
 
 const initialState: State = {
   user: null ,
+  Superior: [
+    {
+      name: "Freddy",
+      position: "CTO",
+      jobDesc: "CTO",
+      company: "Talentlytica",
+      relation: "bad"
+    }
+  ],
+  Peer: [
+    {
+      name: "Natasha",
+      position: "Designer",
+      jobDesc: "Designer",
+      company: "Talentlytica",
+      relation: "great"
+    },
+    {
+      name: "Rafael",
+      position: "Designer",
+      jobDesc: "Designer",
+      company: "Talentlytica",
+      relation: "neutral"
+    },
+  ]
 };
 
 const globalSlice: any = createSlice({

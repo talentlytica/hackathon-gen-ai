@@ -85,3 +85,36 @@ body {
 .chat-box.my-message {
   border: solid 1px var(--mantine-color-gray-5);
 }
+
+.insight-section-user {
+  background-color: var(--mantine-color-white)
+}
+
+.InsightPanel p {
+  margin: 0
+}
+
+.Colleague {
+  background-color: var(--mantine-color-gray-1);
+  border-radius: 10px;
+  border: 2px solid var(--mantine-color-gray-5);
+}
+
+.Colleague:hover {
+  cursor: pointer;
+}
+
+.Colleague p {
+  margin: 0;
+}
+
+.jobdesk-container {
+  padding-left: 50px
+}
+
+.Sparkle {
+  background-color: var(--mantine-color-gray-1);
+  border-radius: 100%;
+  padding: 5px;
+  padding-inline: 10px;
+}

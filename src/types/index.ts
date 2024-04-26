@@ -11,6 +11,7 @@ export type UserDataT = {
   position: string;
   company: string;
   jobDesc: string;
+  relation: string;
 }
 
 export type ChatState = 'understanding' | 'recognizing' | 'advice';

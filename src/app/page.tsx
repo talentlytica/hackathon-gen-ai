@@ -2,9 +2,11 @@
 
 import ChatDialogue from "@/Components/ChatDialogue";
 import ChatLegend from "@/Components/ChatLegend";
+import { ColleagePanel } from "@/Components/ColleaguePanel";
 import DateWelcome from "@/Components/DateWelcome";
 import FormInit from "@/Components/FormInit";
 import IconTab from "@/Components/IconTab";
+import InsightPanel from "@/Components/InsightPanel";
 import { dummyChatGroupAgreement, dummyChatGroupAssement, dummyChatGroupInit, dummyChatGroupInteraction, templateIntake } from "@/dummy/chatdummy";
 import { useAppSelector } from "@/store";
 import { setUserData } from "@/store/GlobalSlice";
@@ -112,8 +114,8 @@ export default function Home() {
               </Box>
             </Flex>}
           </Tabs.Panel>
-          <Tabs.Panel value="people">people panel</Tabs.Panel>
-          <Tabs.Panel value="insight">insight panel</Tabs.Panel>
+          <Tabs.Panel value="people"><ColleagePanel /></Tabs.Panel>
+          <Tabs.Panel value="insight"><InsightPanel /></Tabs.Panel>
           
           <Box className="bottom-content">
             {numState == 5 && 
